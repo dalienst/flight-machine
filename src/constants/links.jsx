@@ -1,15 +1,15 @@
 const publicLinks = {
   Home: "/",
   Flights: "/flights",
+  FlightDetail: "/flights/:id/detail/",
 };
 
 const urls = {
-  ROUTES: "route",
-  FLIGHT: "flight",
+  ROUTES: "route/",
+  ALLFLIGHTS: "flight/",
   FEATURED: "featured/",
-  BOOK: "book",
+  BOOK: "book/",
   BOOKLIST: "book/list/",
-
 };
 
 export { publicLinks, urls };

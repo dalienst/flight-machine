@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { urls } from '../constants/links';
 import { axiosFlight } from '../api/axios';
 import Title from "./Title";
+import { Link } from 'react-router-dom';
 
 export default function FeaturedFlights() {
     const [features, setFeatures] = useState([]);
@@ -51,7 +52,7 @@ export default function FeaturedFlights() {
                             <td>{feature.departure}</td>
                             <td>{feature.arrival}</td>
                             <td>
-                                <button className='btn-primary'>Book a flight</button>
+                                <Link to={`/flights/${feature.id}/detail`} className="btn-primary">Book a flight</Link>
                             </td>
                         </tr>
                     ))}

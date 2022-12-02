@@ -5,6 +5,7 @@ import { publicLinks } from './links';
 
 const Home = React.lazy(() => import("../pages/Home"));
 const Flights = React.lazy(() => import("../pages/Flights"));
+const FlightDetail = React.lazy(() => import("../pages/FlightDetail"));
 
 function BaseRouter() {
   return (
@@ -13,7 +14,8 @@ function BaseRouter() {
         <Navbar />
         <Routes>
           <Route exact path={publicLinks.Home} element={<Home />} />
-          <Route exact path={publicLinks.Flights} element={<Flights />} />
+          <Route path={publicLinks.Flights} element={<Flights />} />
+          <Route path={publicLinks.FlightDetail} element={<FlightDetail/>} />
         </Routes>
       </Suspense>
     </Router>
