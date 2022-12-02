@@ -65,10 +65,10 @@ h6 {
   text-transform: uppercase;
   cursor: pointer;
 }
-.btn-primary:hover {
+/* .btn-primary:hover {
   background: transparent;
   color: var(--mainWhite);
-}
+} */
 .loading {
   text-transform: capitalize;
   text-align: center;
@@ -167,7 +167,7 @@ h6 {
   justify-content: center;
 }
 .flightHero {
-  background-image: url("./images/plane.jpg");
+  background: url("./images/plane.jpg");
   min-height: 60vh;
 }
 /* End of Hero */

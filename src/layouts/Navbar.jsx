@@ -32,13 +32,13 @@ export default class Navbar extends Component {
                     <Link to="/">General</Link>
                 </li>
                 <li>
-                    <Link to="#contact">Customer Care</Link>
+                    <a href="/#contact">Customer Care</a>
                 </li>
                 <li>
-                    <Link to="#about">Corporate Info</Link>
+                    <a href="/#about">Corporate Info</a>
                 </li>
                 <li>
-                    <Link to="#services">Services</Link>
+                    <a href="/#services">Services</a>
                 </li>
             </ul>
         </div>
