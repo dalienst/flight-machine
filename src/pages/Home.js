@@ -10,7 +10,7 @@ import Contact from '../components/Contact'
 const home = () => {
   return (
     <>
-    <Hero>
+    <Hero id="home">
       <Banner title="Fly with us" subtitle="Book your flight today">
         <Link to="/flights" className='btn-primary'>
           Our flights
